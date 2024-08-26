@@ -98,7 +98,7 @@ class _ExtractTextPageState extends State<ExtractTextPage> {
 
     try {
       final response = await http.post(
-        Uri.parse('http://192.168.1.238:5000/transcribe_braille'),
+        Uri.parse('http://192.168.1.153:5000/transcribe_braille'),
         body: {
           'text': textEditingController.text,
           'language': widget.languageCode,

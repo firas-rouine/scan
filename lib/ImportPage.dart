@@ -65,7 +65,7 @@ class _ImportPageState extends State<ImportPage> {
   }
 
   Future<void> _uploadFile(File file, bool isPdf) async {
-    final uri = Uri.parse('http://192.168.1.238:5000/${isPdf ? 'ocr_pdf' : 'ocr'}');
+    final uri = Uri.parse('http://192.168.1.153:5000/${isPdf ? 'ocr_pdf' : 'ocr'}');
     var request = http.MultipartRequest('POST', uri);
 
     request.files.add(await http.MultipartFile.fromPath(
